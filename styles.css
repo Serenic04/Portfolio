@@ -53,9 +53,9 @@ nav ul li a {
 
 /* Image de profil */
 .profile-pic {
-    width: 15px !important; /* Ajout de !important pour forcer la taille */
-    height: 15px !important; /* Ajout d'une hauteur pour garder la forme */
-    object-fit: cover; /* Pour éviter la déformation */
+    width: 100px !important; 
+    height: 100px !important; 
+    object-fit: cover; 
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px;
