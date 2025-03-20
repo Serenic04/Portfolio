@@ -52,13 +52,14 @@ nav ul li a {
 }
 
 /* Image de profil */
+/* Image de profil */
 .profile-pic {
-    width: 100px !important; 
-    height: 100px !important; 
-    object-fit: cover; 
-    border-radius: 50%;
+    width: 300px !important; /* Augmente la largeur */
+    height: 300px !important; /* Augmente la hauteur */
+    object-fit: cover; /* Pour éviter la déformation */
+    border-radius: 50%; /* Garde la forme ronde */
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; /* Centre l'image et ajoute une marge en bas */
 }
 
 
