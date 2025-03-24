@@ -80,6 +80,9 @@ nav ul li a {
     align-items: center;
     gap: 10px;
 }
+.fa-desktop:before {
+    content: "\f108"; 
+}
 
 /* Projets */
 .projects-grid {
