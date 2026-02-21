@@ -385,6 +385,13 @@ footer {
   margin-top: 2em;
 }
 
+#tools-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .skill-card {
   background: #fff;
   border-radius: 18px;
