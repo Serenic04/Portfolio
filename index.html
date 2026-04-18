@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – MOHANRAJU Serenic</title>
+    <link rel="icon" type="image/png" href="images/portfolio.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="loader-bg"><div class="loader"></div></div>
+
+    <header>
+        <div class="header-flex">
+            <a href="#hero" class="logo">SM<span class="logo-dot">.</span></a>
+            <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
+                <a href="#about">À propos</a>
+                <a href="#formation">Formation</a>
+                <a href="#projects">Projets</a>
+                <a href="#skills">Compétences</a>
+                <a href="#stages">Stages</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-socials">
+                <a href="https://www.linkedin.com/in/serenic-mohanraju-343601259/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Serenic04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-layout">
+            <div class="hero-text">
+                <p class="hero-tag"><span class="mono">&lt;</span> Data &amp; IA <span class="mono">/&gt;</span></p>
+                <h1 class="hero-name">MOHANRAJU<br><span class="hero-name-outline">Serenic</span></h1>
+                <p class="hero-role mono"><span id="typed"></span><span class="cursor-blink">_</span></p>
+                <p class="hero-sub">Bachelor Sciences Informatiques &amp; Développement IA<br>En route vers un Master Data Science</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-cta">Voir mes projets</a>
+                    <a href="documentation/CV_MOHANRAJU_Serenic.pdf" class="btn-ghost" download>CV <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img src="profil.jpg" alt="Serenic Mohanraju" class="profile-pic">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring ring-2"></div>
+                </div>
+                <div class="hero-badge badge-1"><i class="fab fa-python"></i> Python</div>
+                <div class="hero-badge badge-2"><i class="fas fa-brain"></i> ML</div>
+                <div class="hero-badge badge-3"><i class="fas fa-database"></i> Data</div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-hint">
+            <span class="mono">SCROLL</span>
+            <div class="scroll-line"></div>
+        </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-bio">
+                    <p class="section-label mono">// À propos</p>
+                    <h2 class="section-heading">Qui suis-je ?</h2>
+                    <p>Après un <strong>BTS SIO SLAM</strong>, j'ai intégré le <strong>Bachelor Sciences Informatiques et Développement IA</strong> pour approfondir mon expertise en data et intelligence artificielle.</p>
+                    <p>Je travaille sur des projets concrets autour de <strong>Python</strong>, du <strong>machine learning</strong> et de l'<strong>analyse de données</strong>. Mon approche : partir d'un problème réel, explorer les données, comparer les modèles, affiner les résultats.</p>
+                    <p>Objectif : intégrer un <strong>Master Data Science / IA</strong> et devenir <strong>Data Scientist</strong> dans la finance, la tech ou la cybersécurité.</p>
+                    <p class="about-hobby">Passionné de <strong>jeux vidéo</strong>, des <strong>échecs</strong> et de <strong>sport</strong> en dehors du code.</p>
+                    <div class="about-cta">
+                        <a href="#projects" class="btn-cta small">Mes projets</a>
+                        <a href="#contact" class="btn-ghost small">Me contacter</a>
+                    </div>
+                </div>
+                <div class="about-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-inner">
+                            <span class="stat-num mono" data-count="9">0</span><span class="stat-plus mono">+</span>
+                        </div>
+                        <span class="stat-label mono">Projets réalisés</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-inner">
+                            <span class="stat-num mono" data-count="28">0</span><span class="stat-plus mono">+</span>
+                        </div>
+                        <span class="stat-label mono">Technologies</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-inner">
+                            <span class="stat-num mono" data-count="2">0</span><span class="stat-plus mono"></span>
+                        </div>
+                        <span class="stat-label mono">Stages</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-inner">
+                            <span class="stat-num mono" data-count="3">0</span><span class="stat-plus mono"></span>
+                        </div>
+                        <span class="stat-label mono">Ans de formation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation" class="section section-dark">
+        <div class="container">
+            <p class="section-label mono">// Formation</p>
+            <h2 class="section-heading">Mon parcours</h2>
+            <div class="formation-track">
+                <div class="formation-card">
+                    <div class="formation-year mono">2022</div>
+                    <span class="formation-badge mono">BAC</span>
+                    <h3>STMG option SIG</h3>
+                    <p>Première immersion dans l'informatique et les systèmes d'information avec la spécialité SIG.</p>
+                </div>
+                <div class="formation-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="formation-card">
+                    <div class="formation-year mono">2023–25</div>
+                    <span class="formation-badge mono">BTS</span>
+                    <h3>SIO option SLAM</h3>
+                    <p class="formation-school"><i class="fas fa-school"></i> IRIS</p>
+                    <p>Développement logiciel, bases de données, PHP, Java, C. Solutions Logicielles et Applications Métiers.</p>
+                    <div class="formation-tags">
+                        <span>PHP</span><span>Java</span><span>C</span><span>MySQL</span>
+                    </div>
+                </div>
+                <div class="formation-arrow"><i class="fas fa-chevron-right"></i></div>
+                <div class="formation-card active-card">
+                    <div class="formation-year mono glow-year">2025–26</div>
+                    <span class="formation-badge mono active-badge">BACHELOR</span>
+                    <h3>Sciences Info. &amp; IA</h3>
+                    <p class="formation-school"><i class="fas fa-university"></i> EPSI</p>
+                    <p>Python, data analysis, machine learning, modélisation, deep learning — orientation Data Scientist.</p>
+                    <div class="formation-tags">
+                        <span class="cyan-tag">Python</span><span class="cyan-tag">TensorFlow</span><span class="cyan-tag">Pandas</span><span class="cyan-tag">ML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <p class="section-label mono">// Projets</p>
+            <h2 class="section-heading">Ce que j'ai construit</h2>
+            <div class="bento-grid">
+                <div class="bento-item featured">
+                    <div class="bento-inner">
+                        <div class="bento-glow"></div>
+                        <p class="bento-type mono">Deep Learning</p>
+                        <h3>TP Fashion-MNIST – MLP vs CNN</h3>
+                        <p>Comparaison d'un Perceptron Multicouche et d'un CNN LeNet-5 sur Fashion-MNIST. Dropout, batch normalization, matrices de confusion, courbes d'apprentissage.</p>
+                        <div class="bento-tags">
+                            <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>Matplotlib</span>
+                        </div>
+                        <a href="https://github.com/Serenic04/TP_Fashion_MNIST/tree/main" target="_blank" class="bento-link mono">
+                            Voir <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bento-item featured featured-purple">
+                    <div class="bento-inner">
+                        <div class="bento-glow glow-purple"></div>
+                        <p class="bento-type mono">Data Viz</p>
+                        <h3>Dashboard Analytique</h3>
+                        <p>Dashboard complet avec API Flask, 11 graphiques interactifs Chart.js, KPIs dynamiques et système de filtres. Architecture backend/frontend maintenable.</p>
+                        <div class="bento-tags">
+                            <span>Python</span><span>Flask</span><span>Pandas</span><span>Chart.js</span><span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Serenic04/Dashboard-Analytique/tree/main" target="_blank" class="bento-link mono">
+                            Voir <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">Data Eng.</p>
+                        <h3>DataCleansing Pipeline</h3>
+                        <p>Pipelines modulaires de nettoyage de données produits, clients et ventes. Génération de KPI qualité, fusion multi-sources.</p>
+                        <div class="bento-tags"><span>Python</span><span>Pandas</span></div>
+                        <a href="https://github.com/HelaTrabelsi/DataCleansing" target="_blank" class="bento-link mono">Voir <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">DevOps</p>
+                        <h3>Atelier Docker</h3>
+                        <p>Application multi-services Flask + MySQL conteneurisée avec Docker Compose. Intégration APIs externes (Bitcoin, BoredAPI).</p>
+                        <div class="bento-tags"><span>Docker</span><span>Flask</span><span>MySQL</span><span>SQLAlchemy</span></div>
+                        <a href="https://github.com/Zahali31/cours-groupe-07" target="_blank" class="bento-link mono">Voir <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">Système</p>
+                        <h3>Jeu d'échec en C</h3>
+                        <p>Jeu d'échec complet en C avec gestion des tours, de l'échec et du mat selon les règles classiques.</p>
+                        <div class="bento-tags"><span>C</span></div>
+                        <a href="documentation/Documentation_jeu_echec.pdf" target="_blank" class="bento-link mono">Doc <i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">Backend</p>
+                        <h3>Application Java</h3>
+                        <p>Application de gestion client en Java avec requêtes SQL vers une base de données relationnelle.</p>
+                        <div class="bento-tags"><span>Java</span><span>SQL</span></div>
+                        <a href="documentation/Présentation_app_java.pdf" target="_blank" class="bento-link mono">Voir <i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">Web</p>
+                        <h3>Site Web + Auth</h3>
+                        <p>Site PHP avec système de connexion complet, gestion de sessions et base de données MySQL.</p>
+                        <div class="bento-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
+                        <a href="https://github.com/Serenic04/Site-Web-avec-Connexion-et-Base-de-Donn-es" target="_blank" class="bento-link mono">Voir <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">E-Commerce</p>
+                        <h3>Site E-Commerce</h3>
+                        <p>Site e-commerce complet avec catalogue produits, panier et gestion commandes en PHP/MySQL.</p>
+                        <div class="bento-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
+                        <a href="documentation/Presentation_Neige_Soleil_ecommerce.pdf" target="_blank" class="bento-link mono">Voir <i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <div class="bento-inner">
+                        <p class="bento-type mono">Stage</p>
+                        <h3>Paris Events</h3>
+                        <p>Plateforme e-commerce pour la gestion de salons d'exposition à Paris — catalogue de stands, panier, authentification.</p>
+                        <div class="bento-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
+                        <a href="documentation/Documentation_Paris_events.pdf" target="_blank" class="bento-link mono">Voir <i class="fas fa-file-pdf"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <p class="section-label mono">// Compétences</p>
+            <h2 class="section-heading">Mes Compétences</h2>
+            <div class="skills-layout">
+                <div class="skill-category">
+                    <h3 class="cat-title mono"><i class="fas fa-code"></i> Développement</h3>
+                    <div class="skill-pills">
+                        <div class="pill"><img src="images/logo_python.png" alt="Python"><span>Python</span></div>
+                        <div class="pill"><img src="images/logo_r.png" alt="R"><span>R</span></div>
+                        <div class="pill"><img src="images/logo_php.png" alt="PHP"><span>PHP</span></div>
+                        <div class="pill"><img src="images/logo_java.png" alt="Java"><span>Java</span></div>
+                        <div class="pill"><img src="images/logo_c.png" alt="C"><span>C</span></div>
+                        <div class="pill"><img src="images/logo_c++.png" alt="C++"><span>C++</span></div>
+                        <div class="pill"><img src="images/logo_html.png" alt="HTML"><span>HTML</span></div>
+                        <div class="pill"><img src="images/logo_css.png" alt="CSS"><span>CSS</span></div>
+                        <div class="pill"><img src="images/logo_mysql.png" alt="MySQL"><span>MySQL</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="cat-title mono"><i class="fas fa-brain"></i> Data &amp; IA</h3>
+                    <div class="skill-pills">
+                        <div class="pill accent-pill"><img src="images/logo_pandas.png" alt="Pandas"><span>Pandas</span></div>
+                        <div class="pill accent-pill"><img src="images/logo_numpy.png" alt="NumPy"><span>NumPy</span></div>
+                        <div class="pill accent-pill"><img src="images/logo_matplotlib.png" alt="Matplotlib"><span>Matplotlib</span></div>
+                        <div class="pill accent-pill"><img src="images/logo_scikit.png" alt="Scikit-learn"><span>Scikit-learn</span></div>
+                        <div class="pill accent-pill"><img src="images/logo_tensorflow.png" alt="TensorFlow"><span>TensorFlow</span></div>
+                        <div class="pill accent-pill"><img src="images/logo_spacy.png" alt="spaCy"><span>spaCy</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="cat-title mono"><i class="fas fa-tools"></i> Outils &amp; Environnements</h3>
+                    <div class="skill-pills">
+                        <div class="pill"><img src="images/logo_git.png" alt="Git"><span>Git / GitHub</span></div>
+                        <div class="pill"><img src="images/logo_Docker.png" alt="Docker"><span>Docker</span></div>
+                        <div class="pill"><img src="images/logo_linux.png" alt="Linux"><span>Linux</span></div>
+                        <div class="pill"><img src="images/logo_colab.png" alt="Google Colab"><span>Google Colab</span></div>
+                        <div class="pill"><img src="images/logo_powerbi.png" alt="Power BI"><span>Power BI</span></div>
+                        <div class="pill"><img src="images/logo_figma.png" alt="Figma"><span>Figma</span></div>
+                        <div class="pill"><img src="images/logo_vmware.png" alt="VMware"><span>VMware</span></div>
+                        <div class="pill"><img src="images/logo_office.png" alt="Office"><span>Office</span></div>
+                        <div class="pill"><img src="images/logo_canva.png" alt="Canva"><span>Canva</span></div>
+                        <div class="pill"><img src="images/logo_staruml.png" alt="StarUML"><span>StarUML</span></div>
+                        <div class="pill"><img src="images/logo_adobe.png" alt="Adobe"><span>Adobe</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STAGES -->
+    <section id="stages" class="section">
+        <div class="container">
+            <p class="section-label mono">// Expériences</p>
+            <h2 class="section-heading">Stages</h2>
+            <div class="stages-grid">
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div>
+                            <h3 class="stage-company">Hôpital Avicenne AP-HP</h3>
+                            <p class="stage-meta mono">
+                                <span><i class="fas fa-map-marker-alt"></i> Bobigny</span>
+                                <span><i class="fas fa-calendar-alt"></i> Juillet 2024</span>
+                                <span><i class="fas fa-clock"></i> 1 mois</span>
+                            </p>
+                        </div>
+                        <span class="stage-badge mono">Stage</span>
+                    </div>
+                    <h4 class="stage-role">Immersion Équipes Postes de Travail &amp; Réseau</h4>
+                    <ul class="stage-missions">
+                        <li>Préparation et installation de PC et de périphériques</li>
+                        <li>Brassage de prises informatiques et réseau</li>
+                        <li>Déménagement et inventaire de matériel informatique</li>
+                        <li>Adressage d'un PC dans l'IPAM</li>
+                    </ul>
+                    <div class="stage-tags">
+                        <span>SCCM</span><span>SMAX</span><span>IPAM</span><span>Réseau</span>
+                    </div>
+                    <a href="documentation/Stage_Hopital_Avicenne.pdf" target="_blank" class="bento-link mono">
+                        Rapport de stage <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-header">
+                        <div>
+                            <h3 class="stage-company">Paris Events</h3>
+                            <p class="stage-meta mono">
+                                <span><i class="fas fa-laptop-house"></i> Télétravail</span>
+                                <span><i class="fas fa-calendar-alt"></i> Décembre 2025</span>
+                                <span><i class="fas fa-clock"></i> 1 mois</span>
+                            </p>
+                        </div>
+                        <span class="stage-badge mono">Stage</span>
+                    </div>
+                    <h4 class="stage-role">Développement Plateforme E-Commerce</h4>
+                    <ul class="stage-missions">
+                        <li>Création du site Paris Events pour la gestion de salons d'exposition</li>
+                        <li>Développement d'un catalogue de stands et d'un système de panier</li>
+                        <li>Mise en place d'un système d'authentification utilisateur</li>
+                    </ul>
+                    <div class="stage-tags">
+                        <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+                    </div>
+                    <a href="documentation/Documentation_Paris_events.pdf" target="_blank" class="bento-link mono">
+                        Documentation <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CENTRES D'INTÉRÊT -->
+    <section id="interets" class="section section-dark">
+        <div class="container">
+            <p class="section-label mono">// En dehors du code</p>
+            <h2 class="section-heading">Centres d'intérêt</h2>
+            <div class="interets-grid">
+                <div class="interet-card">
+                    <div class="interet-icon"><i class="fas fa-chess"></i></div>
+                    <h3>Échecs</h3>
+                    <p>Joueur actif — <span class="mono glow-text">900 ELO</span></p>
+                    <p>Stratégie, anticipation, rigueur — les mêmes qualités qu'en data science.</p>
+                </div>
+                <div class="interet-card">
+                    <div class="interet-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Jeux Vidéo</h3>
+                    <p>En solo : jeux narratifs et action-aventure à l'histoire immersive, FPS compétitifs et simulations sportives.</p>
+                    <p>En multi : sessions co-op, battle royale et party games avec les amis.</p>
+                </div>
+                <div class="interet-card">
+                    <div class="interet-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Sport</h3>
+                    <p>Musculation et footing — discipline et régularité au quotidien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <p class="section-label mono">// Contact</p>
+            <div class="contact-layout">
+                <div class="contact-text">
+                    <h2 class="contact-heading">Travaillons<br><span class="glow-text">ensemble</span></h2>
+                    <p>Ouvert aux opportunités de stage, alternance, projets et collaborations dans le domaine de la data et de l'IA.</p>
+                    <a href="documentation/CV_MOHANRAJU_Serenic.pdf" class="btn-cta" download>
+                        <i class="fas fa-download"></i> Télécharger mon CV
+                    </a>
+                </div>
+                <div class="contact-links">
+                    <a href="mailto:mohanrajuserenic@gmail.com" class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <span class="ci-label mono">Email</span>
+                            <span class="ci-value">mohanrajuserenic@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-right ci-arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/serenic-mohanraju-343601259/" target="_blank" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-info">
+                            <span class="ci-label mono">LinkedIn</span>
+                            <span class="ci-value">Serenic Mohanraju</span>
+                        </div>
+                        <i class="fas fa-arrow-right ci-arrow"></i>
+                    </a>
+                    <a href="https://github.com/Serenic04" target="_blank" class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-info">
+                            <span class="ci-label mono">GitHub</span>
+                            <span class="ci-value">Serenic04</span>
+                        </div>
+                        <i class="fas fa-arrow-right ci-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <p class="mono">&copy; 2026 MOHANRAJU Serenic</p>
+            <p class="mono footer-made">made with <span class="glow-text">code &amp; data</span></p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/serenic-mohanraju-343601259/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Serenic04" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></button>
+</body>
+</html>
