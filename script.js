@@ -146,10 +146,10 @@ document.querySelectorAll(
 // ========================
 const typedEl = document.getElementById('typed');
 const phrases = [
-    'Data Science & Machine Learning',
-    'Analyse & Modélisation de données',
-    'Développement Python & IA',
-    'Future Data Scientist',
+    'Data Engineering & IA',
+    'Machine Learning & NLP',
+    'Pipelines de données & APIs',
+    'Futur Data Engineer',
 ];
 
 let pIdx = 0, cIdx = 0, deleting = false, speed = 70;
